@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Jan 10 17:35:52 2022
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : LPRS1_CPU
+Top-level Entity Name : top
+Family : MAX 10
+Total logic elements : 7,503
+    Total combinational functions : 3,357
+    Dedicated logic registers : 4,232
+Total registers : 4232
+Total pins : 18
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

@@ -1,0 +1,60 @@
+# 1 "C:/Users/User/Desktop/LPRS1_Homework4_PR_043_2020/LPRS1_Homework4_PR_043_2020_Solution/main.asm.txt"
+# 1 "<command-line>"
+# 1 "C:/Users/User/Desktop/LPRS1_Homework4_PR_043_2020/LPRS1_Homework4_PR_043_2020_Solution/main.asm.txt"
+# 36 "C:/Users/User/Desktop/LPRS1_Homework4_PR_043_2020/LPRS1_Homework4_PR_043_2020_Solution/main.asm.txt"
+.data
+10
+2, 2, 29, 24, 13, 4, 7, 14, 22, 30
+16, 19, 0, 26, 24, 7, 4, 20, 9, 25
+0,0,0,0,0,0,0,0,0,0
+0xffff
+.text
+# 52 "C:/Users/User/Desktop/LPRS1_Homework4_PR_043_2020/LPRS1_Homework4_PR_043_2020_Solution/main.asm.txt"
+main:
+ ld R7,R0
+ mov R6,R7
+ inc R0,R0
+ add R1,R0,R7
+ add R2,R1,R7
+ dec R1,R2
+ inc R7,R7
+ for_prvi:
+  dec R7,R7
+  jmpz end_prvi
+ for_prvi_tijelo:
+  ld R3,R0
+  ld R4,R1
+  sub R5,R3,R4
+  st R5,R2
+
+ for_prvi_brojac:
+  inc R0,R0
+  dec R1,R1
+  inc R2,R2
+  jmp for_prvi
+
+ end_prvi:
+  sub R0,R0,R6
+  mov R7,R6
+  inc R7,R7
+  ld R6,R2
+
+ for_drugi:
+  dec R7,R7
+  jmpz end
+
+ for_drugi_tijelo:
+  ld R3,R0
+  sub R4,R6,R3
+  jmps dodjela
+
+ for_drugi_brojac:
+  inc R0,R0
+  jmp for_drugi
+
+ dodjela:
+  mov R6,R3
+  jmp for_drugi_brojac
+
+end:
+ jmp end
